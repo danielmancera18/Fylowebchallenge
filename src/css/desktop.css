@@ -1,0 +1,59 @@
+main {
+  width: 60%;
+  padding: 0;
+  padding-right: 0;
+  display: grid;
+  grid-template-columns: 35rem 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+main .one {
+  width: 90%;
+  padding-top: 4rem;
+  padding-left: 5rem;
+  height: 100%;
+}
+main .two {
+  width: 100%;
+  height: 65%;
+  justify-content: center;
+  align-self: flex-end;
+  position: relative;
+}
+.two p {
+  padding-left: 3rem;
+  align-self: flex-start;
+}
+.two .size {
+  width: 15rem;
+  position: absolute;
+  top: -5rem;
+  right: 2.5rem;
+  border-radius: 1rem 1rem 0 1rem;
+}
+.two .size::after {
+  content: "";
+  float: right;
+  width: 0;
+  height: 0;
+  border-top: 30px solid #fff;
+  border-left: 30px solid transparent;
+}
+.two .size p {
+  padding-left: 0;
+}
+.two .zero {
+  padding-left: 0.5rem;
+}
+
+.bar {
+  height: 85%;
+}
+.circle {
+  width: 1.8rem;
+  height: 1.8rem;
+}
+footer {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  justify-content: center;
+}
